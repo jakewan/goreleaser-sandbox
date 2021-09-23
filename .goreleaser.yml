@@ -33,4 +33,7 @@ changelog:
       - '^test:'
 dockers:
   - image_templates:
-    - frostedcarbon/{{ .ProjectName }}
+    - frostedcarbon/{{ .ProjectName }}:{{ .Tag }}
+    - frostedcarbon/{{ .ProjectName }}:v{{ .Major }}
+    - frostedcarbon/{{ .ProjectName }}:v{{ .Major }}.{{ .Minor }}
+    - frostedcarbon/{{ .ProjectName }}:latest
