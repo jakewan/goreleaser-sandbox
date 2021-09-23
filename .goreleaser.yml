@@ -1,5 +1,6 @@
 # This is an example .goreleaser.yml file with some sane defaults.
 # Make sure to check the documentation at https://goreleaser.com
+project: goreleaser-sandbox
 before:
   hooks:
     # You may remove this if you don't use go modules.
@@ -30,3 +31,6 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+dockers:
+  - image_templates:
+    - frostedcarbon/{{ .ProjectName }}
