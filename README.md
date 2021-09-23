@@ -1,0 +1,1 @@
+# Goreleaser Sandbox
